@@ -16,7 +16,7 @@ function setColorScheme(mode, seed){
         .then(res => res.json())
         .then(data => {
                 
-                 schemesHex = data.colors.map(function(color) {
+                 let schemesHex = data.colors.map(function(color) {
                     return color.hex.value;
                 });
                 setSchemeStyle(schemesHex);
