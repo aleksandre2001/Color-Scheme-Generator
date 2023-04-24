@@ -47,6 +47,7 @@ select, #get-btn{
     border-radius: 6px;
     padding: 0.88em;
     line-height: 1em;
+    cursor: pointer;
 }
 
 
