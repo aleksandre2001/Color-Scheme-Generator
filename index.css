@@ -1,0 +1,88 @@
+
+*{  
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------Layout------------------------------------- */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: block;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+/* -- Header (Color inpput / Select mode / Get scheme button) -- */
+.header{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+    padding: 1.5em 0.875em ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#seed-color{
+    width:59px;
+    height: 38px;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+select, #get-btn{
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    background: #FFFFFF;
+    padding:0.5em 1em;
+    border-color: #D1D5DB;
+    background: #FFFFFF;
+    
+}
+#get-btn{
+    border-radius: 6px;
+    padding: 0.88em;
+    line-height: 1em;
+}
+
+
+/*-- Pallete / Scheme -- */
+.color-pallete, .hex-values{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+    
+}
+.color-pallete{
+    width:100%;
+    height: 25.875em;
+}
+
+.hex-values{
+    padding: 0.5em;
+    justify-content: space-around;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+}
+
+
+/* --------------------Typography-------------------- */
+#get-btn{
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+select, select>option{
+    font-weight: 400;
+}
+
+.hex-values{
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    color: #2B283A;  
+}
+
+

@@ -1,0 +1,49 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="container header">
+            
+            <label for="seed-color"><input type="color" id="seed-color" name="seed-color"/></label>
+            
+            
+            <select id="scheme-mode">
+                <option id="option1" value="monochrome"  selected>Monochrome</option>
+                <option value="Monochrome-dark">Monochrome-dark</option>
+                <option value="Monochrome-light">Monochrome-light</option>
+                <option value="Analogic">Analogic</option>
+                <option value="Complement">Complement</option>
+                <option value="Analogic-complement">Analogic-complement</option>
+                <option value="Triad">Triad</option>
+            </select>
+            <button id="get-btn"> Get color scheme</button>
+        </section>
+       
+        <section class="container pallete">
+        <div class="color-pallete">
+            <div id="strip1"></div>
+             <div id="strip2"></div>
+              <div id="strip3"></div>
+               <div id="strip4"></div>
+                <div id="strip5"></div>     
+        </div>
+        </section>
+        
+        <section class="container hex-values">
+            <div id="hex1"></div>
+             <div id="hex2"></div>
+              <div id="hex3"></div>
+               <div id="hex4"></div>
+                <div id="hex5"></div>
+        </section>
+    
+    
+        <script src="index.js"></script>
+    </body>
+</html>
